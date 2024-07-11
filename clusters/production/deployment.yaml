@@ -1,8 +1,8 @@
 apiVersion: apps/v1
 kind: Deployment
-namespace: default
 metadata:
   name: todoapp-deployment
+  namespace: default
   labels:
     app: todo-frontend
 spec:
@@ -23,9 +23,9 @@ spec:
 ---
 apiVersion: v1
 kind: Service
-namespace: default
 metadata:
   name: todo-service
+  namespace: default
 spec:
   type: NodePort
   selector:
