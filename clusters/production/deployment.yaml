@@ -1,6 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
-namespace:default
+namespace: default
 metadata:
   name: todoapp-deployment
   labels:
@@ -23,7 +23,7 @@ spec:
 ---
 apiVersion: v1
 kind: Service
-namespace:default
+namespace: default
 metadata:
   name: todo-service
 spec:
